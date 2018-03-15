@@ -1,63 +1,89 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)https://getbootstrap.com/docs/4.0/examples/jumbotron/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <!-- mis estilos -->
 
-    <title>Sistema SysMiami</title>
+    <link rel="stylesheet" href="../public/css/Styles.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link href="" rel="stylesheet">
-  </head>
+    <title>Hello, world!</title>
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">SysMiami</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <form class="form-inline my-2 ">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ingresar</button>
-        </form>
-      </div>
-    </nav>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">SysDist Miami Software</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <main role="main">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron my-5">
-        <div class="container">
-          <h1 class="display-3">SysProveeedores</h1>
-          <p>Software de Gestion de Distribuidores y Proveedores</p>
-          <p><a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#" role="button">Documentacion »</a></p>
+            <form class="form-inline   d-flex flex-column">
+                <div class="form-group mb-2">
+                    <label class="sr-only" for="inputName">
+                        User Name
+                    </label>
+<input class="form-control form-control-lg" id="inputName" placeholder="username" type="text">
+                    </input>
+                </div>
+                <div class="form-group mx-sm-2 mb-2">
+                    <label class="sr-only" for="inputPassword">
+                        Password
+                    </label>
+<input class="form-control form-control-lg" id="inputPassword" placeholder="Password" type="password">
+                    </input>
+                </div>
+                <button class="btn btn-primary mb-2 btn-lg" type="submit">
+                    Confirm identity
+                </button>
+            </form>
         </div>
-      </div>
-
-      
-
+    </nav>
+    <main role="main">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">
+                    SysDist
+                </h1>
+                <p>
+                    Software de Gestion de Distribuidores y Proveedores
+                </p>
+                <p>
+                    <a class="btn btn-primary " href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#" role="button">
+                        Documentacion »
+                    </a>
+                </p>
+            </div>
+        </div>
     </main>
-
     <footer class="container">
-      <p>©david 2018</p>
+        <p>
+            ©david 2018
+        </p>
     </footer>
-
     <!-- Bootstrap core JavaScript
-    ================================================== -->
+================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Jumbotron Template for Bootstrap_files/jquery-3.2.1.slim.min.js.descarga" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="./Jumbotron Template for Bootstrap_files/popper.min.js.descarga"></script>
-    <script src="./Jumbotron Template for Bootstrap_files/bootstrap.min.js.descarga"></script>
-  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+    </script>
+    <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+    </script>
+    <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+</body>
 
-</body></html>
+</html>
