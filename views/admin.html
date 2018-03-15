@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+     <!--My Styles  -->
+     <link rel="stylesheet" href="../public/css/stylesAdmin.css">
+     <title>SysDist | Adminintrator</title>
+</head>
+
+<body>
+     <nav class="navbar  navbar-light bg-light">
+          <a class="navbar-brand" href="#">SysDist</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+               aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <form>
+                    <div class="form-row">
+                         <div class="form-group col-12 col-md-3">
+                              <label class="" for="inputName">Active User:</label>
+                         </div>
+                         <div class="form-group col-12 col-md-6">
+                              <input class="form-control" type="text" placeholder="Usuario" readonly>
+                         </div>
+                         <div class="form-group col-12 col-md-3">
+                              <button class="btn btn-primary " type="submit">Log Me Out</button>
+                         </div>
+                    </div>
+               </form>
+          </div>
+     </nav>
+
+     <div class="container">
+          <div class="row my-3">
+               <div class="col-12">
+                    <h2>Data Administration</h2>
+               </div>
+          </div>
+          <div class="row">
+               <div class="col-12">
+                    <form>
+                         <div class="form-group">
+                              <label for="exampleFormControlSelect1">Select a Branch</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                   <option>Shop 1</option>
+                                   <option>Shop 2</option>
+                                   <option>Shop 3</option>
+                                   <option>Shop 4</option>
+                                   <option>Shop 5</option>
+                              </select>
+                         </div>
+                         <div class="form-group">
+                              <label for="exampleFormControlSelect2">Branch offices
+                                   <span>{{oficina}}</span>
+                              </label>
+                              <select multiple class="form-control" id="exampleFormControlSelect2">
+                                   <option>Branch 1</option>
+                                   <option>Branch 2</option>
+                                   <option>Branch 3</option>
+                                   <option>Branch 4</option>
+                                   <option>Branch 5</option>
+                              </select>
+                              <small id="exampleFormControlSelect2Help" class="form-text text-muted">Pick for edit a Branch</small>
+                         </div>
+
+                    </form>
+               </div>
+          </div>
+          <hr class="hr">
+          <div class="row mb-5">
+               <div class="col-12 my-3">
+                    <h2>Data Branch</h2>
+               </div>
+               <div class="col-12">
+                    <form>
+                         <div class="form-row">
+                              <div class="form-group col-12 col-md-3">
+                                   <label class="" for="inputName">Active User:</label>
+                              </div>
+                              <div class="form-group col-12 col-md-6">
+                                   <input class="form-control" type="text" placeholder="Usuario" readonly>
+                              </div>
+                              <div class="form-group col-12 col-md-3">
+                                   <button class="btn btn-primary " type="submit">Log Me Out</button>
+                              </div>
+                         </div>
+
+                         <div class="form-row">
+                              <div class="form-group col-12 col-md-6">
+                                   <label for="inputIdBranch">Id Branch</label>
+                                   <input type="text" class="form-control" id="inputIdBranch" placeholder="Id Branch">
+                              </div>
+                              <div class="form-group col-12 col-md-6">
+                                   <label for="inputNameBranch">Name Branch</label>
+                                   <input type="text" class="form-control" id="inputNameBranch" placeholder="Name Branch">
+                              </div>
+                         </div>
+                         <div class="form-group ">
+                              <label for="inputNitBranch">Nit Branch</label>
+                              <input type="number" class="form-control" id="inputNitBranch" placeholder="Nit Branch">
+                         </div>
+                         <div class="form-group ">
+                              <label for="inputAddressBranch">Address Branch</label>
+                              <input type="text" class="form-control" id="inputAddressBranch" placeholder="Apartment, studio, or floor">
+                         </div>
+                         <div class="form-row">
+                              <div class="form-group col-12 col-md-6">
+                                   <label for="inputPhoneBranch">Phone Branch</label>
+                                   <input type="tel" class="form-control" id="inputPhoneBranch" placeholder="243143154">
+                              </div>
+                              <div class="form-group col-12 col-md-6">
+                                   <label for="inputPhoneEmergencyBranch">Phone Emergency Branch</label>
+                                   <input type="tel" class="form-control" id="inputPhoneEmergencyBranch" placeholder="243143154">
+                              </div>
+                         </div>
+                         <div class="form-row">
+                              <div class="form-group col-12 col-md-6">
+                                   <label for="inputEmailBranch">Email Branch</label>
+                                   <input type="email" class="form-control" id="inputEmailBranch" placeholder="Email">
+                              </div>
+                              <div class="form-group col-12 col-md-6">
+                                   <label for="inputWebBranch">WebSite Branch</label>
+                                   <input type="text" class="form-control" id="inputWebBranch" placeholder="www.branch.com">
+                              </div>
+                         </div>
+                         <div class="form-group">
+                              <div class="form-check">
+                                   <input class="form-check-input" type="checkbox" id="gridCheck">
+                                   <label class="form-check-label" for="gridCheck">
+                                        Iam sure, I want to update this Branch Office
+                              </div>
+                         </div>
+                         <button type="submit" class="btn btn-primary">Update Branch</button>
+                    </form>
+               </div>
+          </div>
+     </div>
+
+
+     <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
